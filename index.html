@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Cars</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Electric Cars</h2>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <ul>
+                    <li class="sidebar_main_title"><a href="">Electric Cars</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sort-bar">
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                    <option value="price">Precio</option>
+                </select>
+            </div>
+            <section class="product-list">
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <article class="product-item">
+                    <img src="./assets/img/auto.JPG" alt="Model: City Car">
+                    <h2>Model: City Car</h2>
+                    <button>Ver más</button>
+                </article>
+                <!-- Más artículos -->
+            </section>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Desafío N° 8 - Desafío Latam!</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
